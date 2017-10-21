@@ -2,7 +2,7 @@
 
 Cool Instagram scripts for promotion and API wrapper. Written in Python.
 
-![Instabot is better than other open-source bots!](../img/tag%20instabot.png "Instabot is better than other open-source bots!")
+![Instabot is better than other open-source bots!](../img/instabot_3_bots.png "Instabot is better than other open-source bots!")
 
 ___
 [![Telegram Chat](https://img.shields.io/badge/chat%20on-Telegram-blue.svg)](https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg)
