@@ -10,7 +10,7 @@
 4. Esegui l'installer.
 5. Segui le istruzioni dell'installer. Ricorda di mettere la spunta a "Add Python 3.x to Path" e clicca su Install Now (Guarda la figura qui sotto). Se sei un utente esperto, seleziona "Customize Installation".
 
-![Install Python 3 and add to PATH](/docs/img/install_python_on_Windows.PNG "Install Python 3 and add to PATH").
+![Install Python 3 and add to PATH](../img/install_python_on_Windows.PNG "Install Python 3 and add to PATH").
 
 ## Scaricare un progetto da Github
 

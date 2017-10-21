@@ -2,7 +2,7 @@
 
 ### ¿Como instalo el bot?
 
-La instalacion en sí depende del sistema operativo. [Instalacion en Windows](/docs/en/Installation_on_Windows.md). [Instalacion en Unix](/docs/en/Installation_on_Unix.md) (Linux, MacOS).
+La instalacion en sí depende del sistema operativo. [Instalacion en Windows](Installation_on_Windows.md). [Instalacion en Unix](Installation_on_Unix.md) (Linux, MacOS).
 
 El uso y la instalación del bot se lleva a cabo través de consola de comandos (terminal / CMD). No tengas miedo, no es para nada complicado!
 

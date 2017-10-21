@@ -2,7 +2,7 @@
 
 Instagram scripts para promocionar y contener la API. Escrito en Python.
 
-![Instabot es mejor que cualquier otro bot open-source!](/docs/img/tag%20instabot.png "Instabot es mejor que cualquier otro bot open-source!")
+![Instabot es mejor que cualquier otro bot open-source!](../img/tag%20instabot.png "Instabot es mejor que cualquier otro bot open-source!")
 
 ___
 [![Telegram Chat](https://img.shields.io/badge/chat%20on-Telegram-blue.svg)](https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg)
@@ -12,23 +12,23 @@ Instagram cerró su API en el verano del 2016. Este módulo escrito en Python pe
 
 ## ¿Que es esto?
 
-Instabot es un módulo desarrolado en Python, que no solo implementa un contenedor sobre la API de instagram, sinó tambien añade varias fucionalidades útiles, como por ejemplo "subscribirse a una lista de personas", "likear fotos por hashtags", "desuscribirse de las personas que no te siguen" y mucho mas. Instabot es lo suficientemente inteligente: [leer](/docs/en/Filtration.md), por ejemplo, como para filtrar las personas a las cuales va a suscribirse.
+Instabot es un módulo desarrolado en Python, que no solo implementa un contenedor sobre la API de instagram, sinó tambien añade varias fucionalidades útiles, como por ejemplo "subscribirse a una lista de personas", "likear fotos por hashtags", "desuscribirse de las personas que no te siguen" y mucho mas. Instabot es lo suficientemente inteligente: [leer](Filtration.md), por ejemplo, como para filtrar las personas a las cuales va a suscribirse.
 
 ## Haz tu pregunta
 
 * Para mensajes de error, usa esta [página](https://github.com/instagrambot/instabot/issues).
 * Si tienes preguntas o te gustaria compartir tu experiencia usando Instabot, escribenos a nuestro [Telegram](https://t.me/instabotproject).
-* Puedes encontrar las preguntas mas frecuentes [Aquí](/docs/en/FAQ.md).
+* Puedes encontrar las preguntas mas frecuentes [Aquí](FAQ.md).
 
 ## Instalación
 
 Para leer instrucciones de instalación de Instabot, usa los siguientes links.
-* Instalación en [Windows](/docs/en/Installation_on_Windows.md),
-* Instalación en [Unix](/docs/en/Installation_on_Unix.md).
+* Instalación en [Windows](Installation_on_Windows.md),
+* Instalación en [Unix](Installation_on_Unix.md).
 
 ## Cómo usarlo
 
-Instruccines de uso [aquí](/docs/en/How_to_use.md).
+Instruccines de uso [aquí](How_to_use.md).
 
 ## Actualizaciones
 
@@ -40,4 +40,4 @@ pip install -U instabot
 
 ## Para desarrolladores
 
-Los desarrolladores pueden leer la [documentacion](/docs/en/For_developers.md).
+Los desarrolladores pueden leer la [documentacion](For_developers.md).

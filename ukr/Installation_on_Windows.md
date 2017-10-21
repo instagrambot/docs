@@ -9,7 +9,7 @@
 3. Скачайте.
 4. Запустіть інсталятор.
 5. Дотримуйтесь інструкції, яку пропонує вам установник. Поставте галочку на "Add Python 3.x to Path" і натисніть на Install Now (дивіться малюнок нижче). Якщо ви досвідчений користувач, виберіть Customize installation.
-![Install Python 3 and add to PATH] (https://github.com/damirqa/instabot/blob/master/docs/img/install_python_on_Windows.PNG "Install Python 3 and add to PATH")
+![Install Python 3 and add to PATH] (https://github.com/damirqa/instabot/blob/master../img/install_python_on_Windows.PNG "Install Python 3 and add to PATH")
 
 ##Завантаження проекту з GitHub
 

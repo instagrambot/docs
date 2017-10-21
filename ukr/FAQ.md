@@ -2,7 +2,7 @@
 
 ### Як встановити бота?
 
-Установка залежить від Вашої операційної системи. [Установка для Windows](/docs/ukr/Installation_on_Windows.md). [Установка для Unix](/docs/ukr/Installation_on_Unix.md) (Linux, macOS).
+Установка залежить від Вашої операційної системи. [Установка для Windows](Installation_on_Windows.md). [Установка для Unix](Installation_on_Unix.md) (Linux, macOS).
 
 Вся работа з ботом, як і установка, відбувається через командний рядок (terminal / CMD). Не варто її боятися - в ній немає нічого складного.
 
