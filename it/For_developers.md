@@ -128,7 +128,7 @@ Questo vale sia per i commenti, che per le liste di hashtag ed utenti nei vari f
 | method        | descrizione | esempio  |
 | ------------- |:-------------:| ------:|
 | unfollow | Smetti di seguire gli utenti | bot.unfollow("competitor")|
-| unfollow_users | Smetti di seguire gli utenti dalla lista | bot.unfollow(["competitor1", "competitor2"])|
+| unfollow_users | Smetti di seguire gli utenti dalla lista | bot.unfollow_users(["competitor1", "competitor2"])|
 | unfollow_non_followers | Smetti di seguire gli utenti che non ti seguono | bot.unfollow_non_followers()|
 
 ### Commenti

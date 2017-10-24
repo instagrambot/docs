@@ -128,7 +128,7 @@ This is in regards to comments or users in a file.
 | method        | description | example  |
 | ------------- |:-------------:| ------:|
 | unfollow | Unfollow user | bot.unfollow("competitor")|
-| unfollow_users | Unfollow users from list | bot.unfollow(["competitor1", "competitor2"])|
+| unfollow_users | Unfollow users from list | bot.unfollow_users(["competitor1", "competitor2"])|
 | unfollow_non_followers | Unfollow users who don't follow you | bot.unfollow_non_followers()|
 
 ### Comment
