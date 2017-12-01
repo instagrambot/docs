@@ -45,7 +45,7 @@ python like_hashtags.py follow
 ```
 
 ## All inclusive
-
+ㄷ
 ***multi_script_CLI.py*** is a script that contains all the functions. The first time you run it, you will be prompted to configure the script. Script settings are stored in the ***setting.txt*** file. Also files will be created: ***hashtag_file.txt, users_file.txt, whitelist.txt, blacklist.txt, comment.txt***.
 
 ## 24/7

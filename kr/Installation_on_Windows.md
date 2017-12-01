@@ -27,7 +27,7 @@ b) Git Client를 설치합니다:
 5. 인스톨러가 제공하는 지시사항을 따르세요(Next를 계속 누르세요). 당신이 숙련된 사용자라면 클라이언트를 직접 구성할 수 있습니다. 
 6. 설치 이후에 명령 프롬프트를 실행하세요. 
 7. 명령 프롬프트에서 다음을 입력하세요. 
-ㄴㄴㄴ
+
 ``` python
 git clone https://github.com/instagrambot/instabot
 ```
