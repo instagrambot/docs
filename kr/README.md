@@ -1,43 +1,43 @@
 # Instabot
 
-È«º¸¿Í API wrapper¸¦ À§ÇÑ ÁÁÀº ÀÎ½ºÅ¸±×·¥ ½ºÅ©¸³Æ®ÀÔ´Ï´Ù. ÆÄÀÌ½ãÀ¸·Î ÀÛ¼ºµÇ¾ú½À´Ï´Ù. 
+í™ë³´ì™€ API wrapperë¥¼ ìœ„í•œ ì¢‹ì€ ì¸ìŠ¤íƒ€ê·¸ëž¨ ìŠ¤í¬ë¦½íŠ¸ìž…ë‹ˆë‹¤. íŒŒì´ì¬ìœ¼ë¡œ ìž‘ì„±ë˜ì—ˆìŠµë‹ˆë‹¤. 
 
-![InstabotÀº ´Ù¸¥ ¿ÀÇÂ¼Ò½º º¿µé º¸´Ù ÁÁ½À´Ï´Ù](../img/instabot_3_bots.png "InstabotÀº ´Ù¸¥ ¿ÀÇÂ¼Ò½º º¿µé º¸´Ù ÁÁ½À´Ï´Ù!")
+![Instabotì€ ë‹¤ë¥¸ ì˜¤í”ˆì†ŒìŠ¤ ë´‡ë“¤ ë³´ë‹¤ ì¢‹ìŠµë‹ˆë‹¤](../img/instabot_3_bots.png "Instabotì€ ë‹¤ë¥¸ ì˜¤í”ˆì†ŒìŠ¤ ë´‡ë“¤ ë³´ë‹¤ ì¢‹ìŠµë‹ˆë‹¤!")
 
 ___
-[![Telegram Ã¤ÆÃ](https://img.shields.io/badge/chat%20on-Telegram-blue.svg)](https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg)
-[![ºôµå »óÅÂ](https://travis-ci.org/instagrambot/instabot.svg?branch=master)](https://travis-ci.org/instagrambot/instabot)
+[![Telegram ì±„íŒ…](https://img.shields.io/badge/chat%20on-Telegram-blue.svg)](https://t.me/joinchat/AAAAAEHxHAtKhKo4X4r7xg)
+[![ë¹Œë“œ ìƒíƒœ](https://travis-ci.org/instagrambot/instabot.svg?branch=master)](https://travis-ci.org/instagrambot/instabot)
 
 As you may know, Instagram closed its API in summer 2016. This Python module can do the same things without any effort.
-´ç½Åµµ ¾Ë°í ÀÖµí, ÀÎ½ºÅ¸±×·¥ API´Â 2016³â ¿©¸§ ¼­ºñ½º¸¦ Á¾·áÇß½À´Ï´Ù. ÀÌ ÆÄÀÌ½ã ¸ðµâÀº ÀÌ¿Í °°Àº ±â´ÉÀ» Á¦°øÇÕ´Ï´Ù. 
+ë‹¹ì‹ ë„ ì•Œê³  ìžˆë“¯, ì¸ìŠ¤íƒ€ê·¸ëž¨ APIëŠ” 2016ë…„ ì—¬ë¦„ ì„œë¹„ìŠ¤ë¥¼ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤. ì´ íŒŒì´ì¬ ëª¨ë“ˆì€ ì´ì™€ ê°™ì€ ê¸°ëŠ¥ì„ ì œê³µí•©ë‹ˆë‹¤. 
 
-## ÀÌ ÇÁ·ÎÁ§Æ®´Â ¹«¾ùÀÏ±î¿ä?
+## ì´ í”„ë¡œì íŠ¸ëŠ” ë¬´ì—‡ì¼ê¹Œìš”?
 
-InstabotÀº ÆÄÀÌ½ã ¾ð¾î·Î ÀÛ¼ºµÈ ¸ðµâÀÌ¸ç, ÀÎ½ºÅ¸±×·¥ APIÀÇ ±â´ÉÀ» ±¸ÇöÇÒ »Ó¸¸ ¾Æ´Ï¶ó À¯¿ëÇÑ ±â´ÉµéÀ» Á¦°øÇÕ´Ï´Ù. 
+Instabotì€ íŒŒì´ì¬ ì–¸ì–´ë¡œ ìž‘ì„±ëœ ëª¨ë“ˆì´ë©°, ì¸ìŠ¤íƒ€ê·¸ëž¨ APIì˜ ê¸°ëŠ¥ì„ êµ¬í˜„í•  ë¿ë§Œ ì•„ë‹ˆë¼ ìœ ìš©í•œ ê¸°ëŠ¥ë“¤ì„ ì œê³µí•©ë‹ˆë‹¤. 
 
-## Áú¹®ÇÏ±â 
+## ì§ˆë¬¸í•˜ê¸° 
 
-* ¿¡·¯ ¸Þ¼¼Áö°¡ ÀÖ´Ù¸é [¿©±â](https://github.com/instagrambot/instabot/issues)¸¦ »ç¿ëÇÏ¼¼¿ä.
-* Áú¹®ÀÌ ÀÖ°Å³ª InstabotÀ» »ç¿ëÇÏ¸é¼­ °æÇèÇÑ °ÍµéÀ» °øÀ¯ÇÏ°í ½Í´Ù¸é, [ÅÚ·¹±×·¥](https://t.me/instabotproject)¿¡ ÀÛ¼ºÇØÁÖ¼¼¿ä.
-* ÀÚÁÖ Áú¹®µÇ´Â Áú¹®µéÀº [¿©±â](FAQ.md)¿¡¼­ ´äÀ» Ã£À» ¼ö ÀÖ½À´Ï´Ù.
+* ì—ëŸ¬ ë©”ì„¸ì§€ê°€ ìžˆë‹¤ë©´ [ì—¬ê¸°](https://github.com/instagrambot/instabot/issues)ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”.
+* ì§ˆë¬¸ì´ ìžˆê±°ë‚˜ Instabotì„ ì‚¬ìš©í•˜ë©´ì„œ ê²½í—˜í•œ ê²ƒë“¤ì„ ê³µìœ í•˜ê³  ì‹¶ë‹¤ë©´, [í…”ë ˆê·¸ëž¨](https://t.me/instabotproject)ì— ìž‘ì„±í•´ì£¼ì„¸ìš”.
+* ìžì£¼ ì§ˆë¬¸ë˜ëŠ” ì§ˆë¬¸ë“¤ì€ [ì—¬ê¸°](FAQ.md)ì—ì„œ ë‹µì„ ì°¾ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-## ¼³Ä¡
+## ì„¤ì¹˜
 
-InstabotÀ» ¼³Ä¡ÇÏ´Âµ¥ ÇÊ¿äÇÑ ÁöÄ§µéÀ» ¾Æ·¡ÀÇ ¸µÅ©¿¡¼­ È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù,
-* [À©µµ¿ì](Installation_on_Windows.md)¿¡¼­ ¼³Ä¡ÇÏ±â,
-* [À¯´Ð½º](Installation_on_Unix.md)¿¡¼­ ¼³Ä¡ÇÏ±â.
+Instabotì„ ì„¤ì¹˜í•˜ëŠ”ë° í•„ìš”í•œ ì§€ì¹¨ë“¤ì„ ì•„ëž˜ì˜ ë§í¬ì—ì„œ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤,
+* [ìœˆë„ìš°](Installation_on_Windows.md)ì—ì„œ ì„¤ì¹˜í•˜ê¸°,
+* [ìœ ë‹‰ìŠ¤](Installation_on_Unix.md)ì—ì„œ ì„¤ì¹˜í•˜ê¸°.
 
-## »ç¿ë ¹æ¹ý
+## ì‚¬ìš© ë°©ë²•
 
-[¿©±â](How_to_use.md)ÀÇ »ç¿ë ÁöÄ§À» ÀÐ¾îº¸¼¼¿ä.
+[ì—¬ê¸°](How_to_use.md)ì˜ ì‚¬ìš© ì§€ì¹¨ì„ ì½ì–´ë³´ì„¸ìš”.
 
-## ¾÷µ¥ÀÌÆ®
+## ì—…ë°ì´íŠ¸
 
-InstabotÀº ½Å»ý ÇÁ·ÎÁ§Æ®ÀÌ¸é¼­ È°¹ßÇÏ°Ô °³¹ß ÁßÀÌ±â ¶§¹®¿¡, ¾÷µ¥ÀÌÆ®´Â ÀÚÁÖ ¹ß»ýÇÒ °ÍÀÔ´Ï´Ù. ±×·¯¹Ç·Î ´ç½ÅÀÌ ¿¡·¯¿¡ Á÷¸éÇß´Ù ÇÏ´õ¶óµµ, Á¶±ÞÇÏ°Ô »ý°¢ÇÏÁö ¸¶¼¼¿ä: InstabotÀ» ÇÑ ¹ø ¾÷µ¥ÀÌÆ® ÇØº¸¼¼¿ä - ¾Æ¸¶ ÀÌ ¿¡·¯´Â ÀÌ¹Ì ÇØ°áµÈ °Í ÀÏ °ÍÀÔ´Ï´Ù. 
+Instabotì€ ì‹ ìƒ í”„ë¡œì íŠ¸ì´ë©´ì„œ í™œë°œí•˜ê²Œ ê°œë°œ ì¤‘ì´ê¸° ë•Œë¬¸ì—, ì—…ë°ì´íŠ¸ëŠ” ìžì£¼ ë°œìƒí•  ê²ƒìž…ë‹ˆë‹¤. ê·¸ëŸ¬ë¯€ë¡œ ë‹¹ì‹ ì´ ì—ëŸ¬ì— ì§ë©´í–ˆë‹¤ í•˜ë”ë¼ë„, ì¡°ê¸‰í•˜ê²Œ ìƒê°í•˜ì§€ ë§ˆì„¸ìš”: Instabotì„ í•œ ë²ˆ ì—…ë°ì´íŠ¸ í•´ë³´ì„¸ìš” - ì•„ë§ˆ ì´ ì—ëŸ¬ëŠ” ì´ë¯¸ í•´ê²°ëœ ê²ƒ ì¼ ê²ƒìž…ë‹ˆë‹¤. 
 ``` python
 pip install -U instabot
 ```
 
-## °³¹ßÀÚµé
+## ê°œë°œìžë“¤
 
-°³¹ßÀÚµéÀº ÀÌ [¹®¼­](For_developers.md)¸¦ ÀÐ´Â °ÍÀ» ÃßÃµÇÕ´Ï´Ù.
+ê°œë°œìžë“¤ì€ ì´ [ë¬¸ì„œ](For_developers.md)ë¥¼ ì½ëŠ” ê²ƒì„ ì¶”ì²œí•©ë‹ˆë‹¤.
