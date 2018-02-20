@@ -26,8 +26,8 @@ b) Installare il client Git:
 6. Dopo l'installazione, lancia il prompt dei comandi.
 7. E dal prompt dei comandi, digita:
 
-``` python
-git clone https://github.com/instagrambot/instabot
+```bash
+git clone https://github.com/instagrambot/instabot --recursive
 ```
 Ora premi enter.
 
@@ -37,7 +37,7 @@ Ora premi enter.
 
 Dal prompt dei comandi, digita:
 
-``` python
+```python
 pip install -U instabot
 ```
 E premi enter.
