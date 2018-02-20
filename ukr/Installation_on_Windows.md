@@ -25,8 +25,8 @@ b) Установка клієнта Git:
 5. Дотримуйтесь інструкції, яку пропонує вам установник (натискайте на Next). Можете налаштувати клієнт самостійно, якщо ви - досвідчений користувач.
 6. Після установки запустіть командний рядок.
 7. У командному рядку наберіть.
-``` python
-git clone https://github.com/instagrambot/instabot
+```bash
+git clone https://github.com/instagrambot/instabot --recursive
 ```
 і натисніть на Enter.
 
@@ -35,7 +35,7 @@ git clone https://github.com/instagrambot/instabot
 ## Установка instabot у віртуальне оточення Python
 
 У командному рядку наберіть.
-``` python
+```bash
 pip install -U instabot
 ```
 і натисніть Enter.
