@@ -27,7 +27,7 @@ b) Installing the Git Client:
 7. At the command prompt, type.
 
 ``` python
-git clone https://github.com/instagrambot/instabot
+git clone https://github.com/instagrambot/instabot  --recursive
 ```
 And press Enter.
 
