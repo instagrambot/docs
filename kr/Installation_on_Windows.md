@@ -28,8 +28,8 @@ b) Git Client를 설치합니다:
 6. 설치 이후에 명령 프롬프트를 실행하세요. 
 7. 명령 프롬프트에서 다음을 입력하세요. 
 
-``` python
-git clone https://github.com/instagrambot/instabot
+```bash
+git clone https://github.com/instagrambot/instabot --recursive
 ```
 그 다음 엔터를 누르세요.
 
@@ -39,7 +39,7 @@ git clone https://github.com/instagrambot/instabot
 
 명령 프롬프트에서 다음을 입력하세요. 
 
-``` python
+```bash
 pip install -U instabot
 ```
 그 다음 엔터를 누르세요.
