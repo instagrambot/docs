@@ -1,8 +1,8 @@
 # Come installare e lanciare lo script su UNIX? (Linux, macOS)
 * Apri il terminale e digita:
-```
+```bash
 pip install -U instabot
-git clone https://github.com/instagrambot/instabot
+git clone https://github.com/instagrambot/instabot --recursive
 cd instabot/examples
 ```
 
