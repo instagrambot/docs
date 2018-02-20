@@ -9,7 +9,7 @@
 * Відкрийте термінал.
 ```
 pip install -U instabot
-git clone https://github.com/instagrambot/instabot
+git clone https://github.com/instagrambot/instabot --recursive
 cd instabot/examples
 ```
 
