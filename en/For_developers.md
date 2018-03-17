@@ -43,6 +43,8 @@ bot = Bot(
 | max_comments_per_day| Max number of comments per day| 100|
 | max_likes_to_like| If the media has more likes then this value - it will be ignored and not be liked | 200|
 | filter_users | Filter users if True | True|
+| filter_business_accounts | Filter business accounts if True | True|
+| filter_verified_accounts | Filter verified accounts if True | True|
 | max_followers_to_follow| If the user has more followers than this value - the user will not be followed or liked. | 2000|
 | min_followers_to_follow| If the user has fewer followers than this value - the user will not be followed or liked.| 10|
 | max_following_to_follow| If the user has more followings than this value - the user will not be followed or liked.| 10000|
