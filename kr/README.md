@@ -40,4 +40,4 @@ pip install -U instabot
 
 ## 개발자들
 
-개발자들은 이 [문서](For_developers.md)를 읽는 것을 추천합니다.
+개발자들은 이 [문서](../en/For_developers.md)를 읽는 것을 추천합니다.
