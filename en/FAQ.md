@@ -1,18 +1,14 @@
-# Frequently Asked Questions On Using Instabot.
+# Popular questions on instabot.
 
 ### How do I install a bot?
 
-The installation depends on your operating system. 
+The installation depends on your operating system. [Installation for Windows](Installation_on_Windows.md). [Installation for Unix](Installation_on_Unix.md) (Linux, MacOS).
 
-[Click Here for Windows installation Details](Installation_on_Windows.md). 
-
-[Click Here for Unix installation Details](Installation_on_Unix.md) (Linux, MacOS).
-
-All actions or operations executed   with the bot, just like installation, occurs through the command line (terminal / CMD). There is nothing complicated or scary about it. 
+All the work with the bot, like installation, occurs through the command line (terminal / CMD). Do not be afraid of it - there is nothing complicated in it.
 
 ### How do I start a bot?
 
-To start a bot, you need to  install it first. Then go to the sample folder and run any script via the command line, for example:
+First you need to install it. Then go to the sample folder and run any script via the command line, for example:
 ``` python
 python multi_script_CLI.py
 ```
@@ -28,91 +24,64 @@ It immediately becomes clear how to work with this script. For example, if you w
 python like_hashtags.py cat dog
 ```
 
-### Where do I enter the username and password for my  Instagram account?
+### Where do I enter the username and password from the Instagram account?
 
-These are not  specified at all: the bot itself will ask them to be entered at the initial  start up. 
-
-They will be saved to the file secret.txt and will be downloaded from there after further starts. 
-
-You can also pass them manually to the function login():
+They can not be specified at all: the bot itself will ask them to enter at the first start. They will be saved to the file secret.txt and will be downloaded from there when further starts. You can also pass them manually to the function login():
 ``` python
 bot.login(username=«my_username», password=«my_password»)
 ```
 
 Also, when you start the script for the first time, you will be able to add several accounts to Instabot. In the future, if you specify more than one account, before each start, you will have the opportunity to choose an accent to work with.
 
+### When you enter the password, it is not displayed! What to do?
 
-### I entered my password but it did not display! What Should I  do?
-
- Don't worry, it has been entered correctly. The password is not displayed specifically to preven other people from from spying on it.
- 
- If you accidentally entered a wrong password,  the password will not work and you will be asked to re-enter it again. 
-
+The password is not displayed specially so that no one can spy on it. Don't worry, it has been entered correctly. If you accidentally entered a wrong password, then the next time you run it, the password will not work and you will be asked to enter it again. 
 
 ### When entering the login and password for the Instagram account, where do they go? Are they sent remotely?
 
 The entered login and password are stored locally on your computer in the secret.txt file. It is not transmitted anywhere.
 
+### Will my account be banned?
 
-### Can my account(s) be banned?
-
-Instabot has limits both on the number of subscriptions / likes / comments and so on per day, and on the frequency of requests - for example, do not subscribe too quickly. 
-
-Instabot already has its own limits, which guarantee safe use. You can set your own values, but be careful. 
-More details about this can be read here (make a page with a description of these parameters and how to change).
-
-Note that The bot saves the number of likes / subscriptions / unsubscriptions and so on. And dumps them once a day.
-
+Instabot has limits both on the number of subscriptions / likes / comments and so on per day, and on the frequency of requests - for example, do not subscribe too quickly. Instabot already has its own limits, which guarantee safe use. You can set your own values, but be careful. More details about this can be read here (make a page with a description of these parameters and how to change). The bot saves the number of likes / subscriptions / unsubscriptions and so on. And dumps them once a day.
 
 ### Is it possible to speed up, for example, an answer from everyone? Is it safe?
 
 There are parameters for the class `instabot.Bot ()`. If you run the __milti_script_CLI__ code, open it with a text editor, find the value __unfollow_delay = 30__ there, change it to whatever you want. Similarly, you can change other settings. But note, this can be unsafe.
-WARNING:if you unsubscribe from 100 people per second, you will be banned for sure. The limits depend on the age and size of the account, so their fine-tuning is everyone's business. 
 
-The values that stand by default in Instabot are safe for _most_. No one was banned because of them.
+Agree that if you unsubscribe from 100 people per second, you will be banned for sure. The limits depend on the age and size of the account, so their fine-tuning is everyone's business. The values that stand by default in Instabot are safe for _most_. No one was banned because of them.
 
+### I want the bot to unsubscribe from accounts that did not respond with a mutual subscription.
 
-### I want the bot to unsubscribe from all accounts that did not respond with a mutual subscription.
-
-For this  task, use the already pre-written script which lies in the examples folder: unfollow_non_followes.py, is suitable. 
-Just go to the folder with this script on your computer and run it in the terminal.
+For your task, the already written script, which lies in the examples folder: unfollow_non_followes.py, is suitable. Just go to the folder with this script on your computer and run it in the terminal.
 ``` python
 python unfollow_non_followers.py
 ```
 
-### I want the bot to automatically like certain  posts with hashtags, which I will list.
+### I want the bot to put the likes of posts with hashtags, which I will list.
 
 Everything again is very simple! Run the example like_hashtags.py, for example, like this:
 ``` python
 python like_hashtags.py dog cat
 ```
 
-### Too many scripts! Is there a particular script for everything at once?
+### Too many scripts! Is there anything in one bottle?
 
-Yes there is. 
-
-Thanks to the efforts of our community, a very cool script was written. You can find it under the name [multi_script_CLI.py](/examples/multi_script_CLI.py). It is written in English, but I think everything will be clear enough to understand. 
-I strongly advise you to try it!
-
+There is. Thanks to the efforts of our community, a very cool script was written. You can find it under the name [multi_script_CLI.py](/examples/multi_script_CLI.py). He is in English, but I think everything will be clear. I strongly advise you to try it!
 
 ### How can I organize an auto-posting photo in the Instagram?
 
-For this, we have a tutorial in [examples](/examples/autopost). 
+For this, we have a daddy in [examples](/examples/autopost). Below on that page you will find how to configure and run auto-hosting.
 
-You will find how to configure and run auto-hosting below on that page.
+### AutoPost publishes only a photo or description and a hashtag, too?
 
-
-### Does AutoPost publish only a photo... can it publish a  description and a hashtag, too?
-
-Hashtags is the same as with  descriptions - just add them there.
-
+Hashtags is the same description - just add them there.
 
 ### Can I publish video via autoposting?
 
 Unfortunately no. This would increase the size of the project several times.
 
-
-### How can I Contribute to the  the project?
+### How can I help the project?
 
 You can:
 * Put the star in Github. To do this, just click on the star here https://github.com/instagrambot (top right), May need to register (for free).
