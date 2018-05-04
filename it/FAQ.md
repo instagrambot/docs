@@ -74,11 +74,11 @@ python like_hashtags.py dog cat
 
 ### Troppi Script! Ce n'è uno che possa riordinarli tutti?
 
-Eccolo. Grazie agli sforzi della community, è stato scritto uno script molto figo. Puoi trovarlo sotto il nome di [multi_script_CLI.py](/examples/multi_script_CLI.py). Scritto in inglese, ma penso che sia molto chiaro. Prova ad usarlo! 
+Eccolo. Grazie agli sforzi della community, è stato scritto uno script molto figo. Puoi trovarlo sotto il nome di [multi_script_CLI.py](https://github.com/instagrambot/instabot/blob/master/examples/multi_script_CLI.py). Scritto in inglese, ma penso che sia molto chiaro. Prova ad usarlo! 
 
 ### Come posso organizzare l'autoposting di immagini su Instagram?
 
-Per questo, abbiamo una soluzione nella cartella [examples](/examples/autopost). In fondo alla pagina trovi alcune info su come configurare l'autoposting
+Per questo, abbiamo una soluzione nella cartella [examples](https://github.com/instagrambot/instabot/tree/master/examples/autopost). In fondo alla pagina trovi alcune info su come configurare l'autoposting
 
 ### L'AutoPost pubblica solo la foto o anche descrizione e hashtag?
 
