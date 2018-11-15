@@ -150,6 +150,6 @@ This is in regards to comments or users in a file.
 
 | method        | description | example  |
 | ------------- |:-------------:| ------:|
-| upload_photo | Uploads photo to your account | bot.upload_photo("/somephoto.jpg", "Nice pic!")|
+| upload_photo | Uploads photo to your account | bot.upload_photo("/somephoto.jpg", caption="Nice pic!")|
 | download_photo | Downloads photo by id | bot.download_photo(["123", filename="somefile.jpg")|
 | download_photos | Downloads photos by ids into given folder | bot.download_photos(["123","345"], "photos")|
