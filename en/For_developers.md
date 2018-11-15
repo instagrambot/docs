@@ -145,3 +145,11 @@ This is in regards to comments or users in a file.
 | comment_geotag | Put comments under medias by geotag | TODO |
 | comment_users | Put comments under users' last medias | bot.comment_users(["activefollower1", "activefollower2"]) |
 | is_commented | Check if media is already commented | bot.is_commented("123321") |
+
+### Photos
+
+| method        | description | example  |
+| ------------- |:-------------:| ------:|
+| upload_photo | Uploads photo to your account | bot.upload_photo("/somephoto.jpg", caption="Nice pic!")|
+| download_photo | Downloads photo by id | bot.download_photo(["123", filename="somefile.jpg")|
+| download_photos | Downloads photos by ids into given folder | bot.download_photos(["123","345"], "photos")|
