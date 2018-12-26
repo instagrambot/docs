@@ -1,39 +1,30 @@
-﻿## Documentation
+﻿# Documentation for Developers
 
-### Bot Class
+This is documentation for developers, where we provide our bot methods as an API for your needs. Instagram API [deprecated](https://www.instagram.com/developer/changelog/) practically all of their methods, so we use their mobile API. We are hiding under the mask of mobile phone. Instagram servers think that your requests from instabot are made from some mobile app. By the way we got some cases of ban by them, our mask is not perfect. We are hardly trying to make your requests as safe as they could be. For example, we restricted the amount of likers of some picture til 999.
+
+By the way we hardly recommend you not to use your own account if you don't need your personal data or don't want to promote your account.
+
+## Quickstart
+
+For the better understanding of how bot works, let's start with a quick example:
 
 ``` python
 from instabot import Bot
-bot = Bot(
-            proxy=None,
-            max_likes_per_day=1000,
-            max_unlikes_per_day=1000,
-            max_follows_per_day=350,
-            max_unfollows_per_day=350,
-            max_comments_per_day=100,
-            max_likes_to_like=100,
-            filter_users=True,
-            filter_business_accounts=True,
-            filter_verified_accounts=True,
-            max_followers_to_follow=2000,
-            min_followers_to_follow=10,
-            max_following_to_follow=7500,
-            min_following_to_follow=10,
-            max_followers_to_following_ratio=10,
-            max_following_to_followers_ratio=2,
-            max_following_to_block=2000,
-            min_media_count_to_follow=3,
-            like_delay=10,
-            unlike_delay=10,
-            follow_delay=30,
-            unfollow_delay=30,
-            comment_delay=60,
-            whitelist=False,
-            blacklist=False,
-            comments_file=False,
-            stop_words=['shop', 'store', 'free']
-)
+
+
+bot = Bot()
+bot.login(username="YOUR_LOGIN", password="YOUR_PASSWORD")
+user_id = bot.get_user_id_from_username("lego")
+user_info = bot.get_user_info(user_id)
+print(user_info['biography'])
 ```
+
+The output of program would be greeting phrase from [official LEGO account](https://www.instagram.com/lego/?hl=ru). At the time of writing documentation we got this:
+```
+Hello! You made it to the official #LEGO Instagram - where everything is awesome!
+```
+
+## Methods
 
 | parameter| description | example |
 | ------------- |:-------------:| ------:|
