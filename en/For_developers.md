@@ -460,6 +460,6 @@ Example: `bot.upload_photo("/somephoto.jpg", caption="Nice pic!")`
 
 Example: `bot.download_photo(["123", filename="somefile.jpg")`
 
-**download_photos** — Downloads photos by ids into given folder.
+<a name="download_photos"></a> **download_photos** — Downloads photos by ids into given folder.
 
 Example: `bot.download_photos(["123","345"], "photos")|`
