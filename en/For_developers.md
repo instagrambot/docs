@@ -1,4 +1,4 @@
-﻿# <a name="Intro"></a> Documentation for Developers
+# <a name="Intro"></a> Documentation for Developers
 
 This is documentation for developers, where we provide our bot methods as an API for your needs. Instagram API [deprecated](https://www.instagram.com/developer/changelog/) practically all of their methods, so we use their mobile API. We are hiding under the mask of mobile phone. Instagram servers think that your requests from instabot are made from some mobile app. By the way we got some cases of ban by them, our mask is not perfect. We are hardly trying to make your requests as safe as they could be. For example, we restricted the amount of likers of some picture til 999.
 
@@ -218,7 +218,7 @@ Methods of `Bot` instance, that you could use as API calls.
 
 <a name="login"></a> **login** — Method that authenticates you in Instagram.
 
-Args:
+Parameters:
 
 - _login_, _password_ — you could pass login and password and bot would use them. Bot would ask you for them by default.
 - _force_ — forses bot to re-login. False by default.
@@ -234,50 +234,50 @@ Example: `bot.login(username="YOUR_LOGIN", password="YOUR_PASSWORD")`
 
 <a name="get_user_id_from_username"></a> **get_user_id_from_username** — Get `user_id` by username.
 
-Args:
+Parameters:
 
 - _username_ — a string with user's Instagram username.
 
 Example: `bot.get_you_medias("lego")`
 
-Answer: `196743444`
+Result: `196743444`
 
 <a name="get_username_from_user_id"></a> **get_username_from_user_id** — Get username by `user_id`.
 
-Args:
+Parameters:
 
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 Example: `bot.get_you_medias("196743444")`
 
-Answer: `lego`
+Result: `lego`
 
 <a name="get_media_id_from_link"></a> **get_media_id_from_link** — Get `media_id` by link on some Instagram post.
 
-Args:
+Parameters:
 
 - _link_ — a string with a valid link on Instagram post.
 
 Example: `bot.get_media_id_from_link("https://www.instagram.com/p/BryhSSgDEI5/")`
 
-Answer: `1941760781700579897`
+Result: `1941760781700579897`
 
 
 <a name="get_link_from_media_id"></a> **get_link_from_media_id** — Get link on some Instagram post by `media_id`.
 
-Args:
+Parameters:
 
 - *media_id* — See [get_media_id_from_link](#get_media_id_from_link)
 
 Example: `bot.get_media_id_from_link(1941760781700579897)`
 
-Answer: `https://www.instagram.com/p/BryhSSgDEI5/`
+Result: `https://www.instagram.com/p/BryhSSgDEI5/`
 
 ### <a name="getmedias"></a> Get medias
 
 <a name="get_user_medias"></a> **get_user_medias** — Get list of 20 last user's medias.
 
-Args:
+Parameters:
 
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 - *filtration* — Bot would filter those publications, witch are not satisfies bot parameters as `max_likes_to_like` and `min_likes_to_like`. All medias between them would be displayed. Defaults as True.
@@ -285,27 +285,27 @@ Args:
 
 Example: `bot.get_user_medias("lego")`
 
-Answer: `[1900986973457183396, 1900986921481250054]`
+Result: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_your_medias"></a> **get_your_medias** — Get list of ids of your last medias.
 
-Args:
+Parameters:
 
 - _as_dict_ — With parameter as_dict=True returns media as dict. False by default.
 
 Example: `bot.get_you_medias()`
 
-Answer: `[1900986973457183396, 1900986921481250054]`
+Result: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_timeline_medias"></a> **get_timeline_medias** — Get list of media_ids from your timeline feed.
 
 Example: `bot.get_timeline_medias()`
 
-Answer: `[1900986973457183396, 1900986921481250054]`
+Result: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_total_user_medias"></a> **get_total_user_medias** — Same as [get_user_medias](#get_user_medias), but fetches all of user's medias.
 
-Args:
+Parameters:
 
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
@@ -313,7 +313,7 @@ Args:
 
 Example: `bot.get_hashtag_medias("cats")`
 
-Answer: `[1900986973457183396, 1900986921481250054]`
+Result: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_geotag_medias"></a> **get_geotag_medias** — Get list of medias by geotag.
 
@@ -335,51 +335,51 @@ Example: `TODO`
 
 <a name="get_user_followers"></a> **get_user_followers** — Get list of user's followers.
 
-Args:
+Parameters:
 
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 Example: `bot.get_user_followers("lego")`
 
-Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
+Result: `['6976090614', '4828850852', '6986373483', '7139262982']`
 
 <a name="get_user_following"></a> **get_user_following** — Get list of user's following.
 
-Args:
+Parameters:
 
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 Example: `bot.get_user_following("lego")`
 
-Answer: `['1501782303', '871819364', '4804628891', '45786877']`
+Result: `['1501782303', '871819364', '4804628891', '45786877']`
 
 <a name="get_media_likers"></a> **get_media_likers** — Get list of media likers
 
-Args:
+Parameters:
 
 - *media_id* — Id of post in Instagram that you want to fetch. See [get_media_id_from_link](#get_media_id_from_link).
 
 Example: `bot.get_media_likers("1941760781700579897")`
 
-Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
+Result: `['6976090614', '4828850852', '6986373483', '7139262982']`
 
 <a name="get_media_commenters"></a> **get_media_commenters** — Get list of users who commented on the media
 
 Example: `bot.get_media_commenters("1941760781700579897")`
 
-Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
+Result: `['6976090614', '4828850852', '6986373483', '7139262982']`
 
 ### Comments
 
 <a name="get_media_comments"></a> **get_media_comments** — Get list of 20 latest media's comments
 
-Args:
+Parameters:
 
 - *media_id* Id of post in Instagram that you want to fetch. See [get_media_id_from_link](#get_media_id_from_link).
 - *only_text* — option to get list with only text of each comment without additional information. Defaults as False.
 
 Example: `bot.get_media_comments("1941760781700579897")`
-Answer is a list of such objects:
+Result is a list of such objects:
 ```
 {'pk': 17848187965317794, 'user_id': 5726722318, 'text': 'Come glasgow', 'type': 0, 'created_at': 1545772239, 'created_at_utc': 1545772239, 'content_type': 'comment', 'status': 'Active', 'bit_flags': 0, 'user': {'pk': 5726722318, 'username': 'dj_gramm', 'full_name': 'KingJellyIG', 'is_private': True, 'profile_pic_url': 'https://scontent-iad3-1.cdninstagram.com/vp/b7e6505312f276c551b9b27c784d8080/5CB5D7D8/t51.2885-19/s150x150/46878995_2733544636871740_4791338569069232128_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com', 'profile_pic_id': '1943181535717308400_5726722318', 'is_verified': False}, 'did_report_as_spam': False, 'share_enabled': False, 'has_liked_comment': False, 'comment_like_count': 0, 'inline_composer_display_condition': 'never'}
 ```
@@ -389,7 +389,7 @@ Answer is a list of such objects:
 <a name="get_comment"></a> **get_comment** — Get comment from comment file
 
 Example: `bot.get_comment(17848187965317794)`
-Answer is a comment object:
+Result is a comment object:
 ```
 {'pk': 17848187965317794, 'user_id': 5726722318, 'text': 'Come glasgow', 'type': 0, 'created_at': 1545772239, 'created_at_utc': 1545772239, 'content_type': 'comment', 'status': 'Active', 'bit_flags': 0, 'user': {'pk': 5726722318, 'username': 'dj_gramm', 'full_name': 'KingJellyIG', 'is_private': True, 'profile_pic_url': 'https://scontent-iad3-1.cdninstagram.com/vp/b7e6505312f276c551b9b27c784d8080/5CB5D7D8/t51.2885-19/s150x150/46878995_2733544636871740_4791338569069232128_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com', 'profile_pic_id': '1943181535717308400_5726722318', 'is_verified': False}, 'did_report_as_spam': False, 'share_enabled': False, 'has_liked_comment': False, 'comment_like_count': 0, 'inline_composer_display_condition': 'never'}
 ```
