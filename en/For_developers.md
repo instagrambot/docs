@@ -96,7 +96,7 @@ Methods of `Bot` instance, that you could use as API calls.
 
 ### Auth
 
-**loin** — Method that authenticates you in Instagram.
+**login** — Method that authenticates you in Instagram.
 
 Args:
 
