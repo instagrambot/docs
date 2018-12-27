@@ -92,25 +92,59 @@ You should read as `["Nice!", "Great!", "Good pic!"]`
 
 # Bot Methods
 
-Methods of `Bot()` instance, that you could use as API calls.
+Methods of `Bot` instance, that you could use as API calls.
+
+### Auth
+
+**loin** — Method that authenticates you in Instagram.
+
+Args:
+
+- _login_, _password_ — you could pass login and password and bot would use them. Bot would ask you for them by default.
+- _force_ — forses bot to re-login. False by default.
+- _proxy_ — proxy server that bot would use during authentication 
+- *use_cookie* — means that bot would use cookies not to re-login every time it needs to push some request. Defaults as True.
+- *cookie_fname* — filename where cookies would be stored. Default value: `cookie.txt`.
+
+**logout** — Loggs you out.
 
 ### Get
 
-**get_your_medias** — Get list of your last medias.
+<a name="get_your_medias"></a> **get_your_medias** — Get list of ids of your last medias.
+
+Args:
+
+- _as_dict_ — With parameter as_dict=True returns media as dict. False by default.
 
 Example: `bot.get_you_medias()`
+Answer: `[1900986973457183396, 1900986921481250054]`
 
-**get_timeline_medias** — Get list of media_ids from your timeline feed
+<a name="get_timeline_medias"></a> **get_timeline_medias** — Get list of media_ids from your timeline feed
 
 Example: `bot.get_timeline_medias()`
+Answer: `[1900986973457183396, 1900986921481250054]`
 
-**get_user_medias** — Get list of user's medias.
+<a name="get_user_medias"></a> **get_user_medias** — Get list of 20 last user's medias.
 
-Example: `bot.get_user_medias("ohld")`
+Args:
 
-**get_hashtag_medias** — Get list of medias by hashtag
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](TODO)
+- *filtration* — Bot would filter those publications, witch are not satisfies bot parameters as `max_likes_to_like` and `min_likes_to_like`. All medias between them would be displayed. Defaults as True.
+- *is_comment* — Filtration of medias that has/hasn't a comment.
 
-Example: `bot.get_hashtag_medias("Dog")`
+Example: `bot.get_user_medias("lego")`
+Answer: `[1900986973457183396, 1900986921481250054]`
+
+<a name="get_total_user_medias"></a> **get_total_user_medias** — Same as [get_user_medias](#get_user_medias), but fetches all of user's medias.
+
+Args:
+
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](TODO)
+
+<a name="get_hashtag_medias"></a> **get_hashtag_medias** — Get list of medias by hashtag.
+
+Example: `bot.get_hashtag_medias("cats")`
+Answer: `[1900986973457183396, 1900986921481250054]`
 
 **get_geotag_medias** — Get list of medias by geotag
 
