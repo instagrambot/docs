@@ -26,61 +26,121 @@ Hello! You made it to the official #LEGO Instagram - where everything is awesome
 
 ## Bot Parameters
 
-**proxy** — Proxy for Instabot. Default: `None`. Example: `TODO`
+**proxy** — Proxy for Instabot.
 
-**max_likes_per_day** — How many likes the bot will perform per day. Default: 1000
+Default: `None`.
 
-**max_unlikes_per_day** — How many medias the bot will unlike in a day. Default: 1000
+Example: `TODO`
 
-**max_follows_per_day** — Max number of follow per day. Default: 350
+**max_likes_per_day** — How many likes the bot will perform per day.
 
-**max_unfollows_per_day** — Max number of unfollow per day. Default: 350
+Default: 1000
 
-**max_comments_per_day** — Max number of comments per day. Default: 100
+**max_unlikes_per_day** — How many medias the bot will unlike in a day.
 
-**max_likes_to_like** — If the media has more likes then this value — it will be ignored and not be liked. Default: 200
+Default: 1000
 
-**filter_users** — Filter users if True. Default: True
+**max_follows_per_day** — Max number of follow per day.
 
-**filter_business_accounts** — Filter business accounts if True. Default: True
+Default: 350
 
-**filter_verified_accounts** — Filter verified accounts if True. Default: True
+**max_unfollows_per_day** — Max number of unfollow per day.
 
-**max_followers_to_follow** — If the user has more followers than this value — the user will not be followed or liked. Default: 2000
+Default: 350
 
-**min_followers_to_follow** — If the user has fewer followers than this value — the user will not be followed or liked. Default: 10
+**max_comments_per_day** — Max number of comments per day.
 
-**max_following_to_follow** — If the user has more followings than this value — the user will not be followed or liked. Default: 10000
+Default: 100
 
-**min_following_to_follow** — If the user has fewer followings than this value — the user will not be followed or liked. Default: 10
+**max_likes_to_like** — If the media has more likes then this value — it will be ignored and not be liked.
 
-**max_followers_to_following_ratio** — if the user's followers/following is greater than this value — the user will not be followed or liked. Default: 10
+Default: 200
 
-**max_following_to_followers_ratio** — if user's following/followers is greater than this value — he will not be followed or liked. Default: 2
+**filter_users** — Filter users if True.
 
-**min_media_count_to_follow** — If the user has fewer media count than this value — the user will not be followed. Default: 3
+Default: True
 
-**max_following_to_block** — If the user have a following more than this value — the user will be blocked in blocking scripts because he is a massfollower. Default: 2000
+**filter_business_accounts** — Filter business accounts if True.
 
-**max_likes_to_like** — Max number of likes that can media have to be liked. Default: 100 
+Default: True
 
-**like_delay** — Delay between likes in seconds. Default: 10
+**filter_verified_accounts** — Filter verified accounts if True.
 
-**unlike_delay** — Delay between unlikes in seconds. Default: 10
+Default: True
 
-**follow_delay** — Delay between follows in seconds. Default: 30
+**max_followers_to_follow** — If the user has more followers than this value — the user will not be followed or liked. 
 
-**unfollow_delay** — Delay between unfollows in seconds. Default: 30
+Default: 2000
 
-**comment_delay** — Delay between comments in seconds. Default: 60
+**min_followers_to_follow** — If the user has fewer followers than this value — the user will not be followed or liked. 
 
-**whitelist** — Path to the file with users that shouldn't be unfollowed. Default: `whitelist.txt`
+Default: 10
 
-**blacklist** — Path to the file with users that shouldn't be followed, liked or commented. Default: `blacklist.txt`
+**max_following_to_follow** — If the user has more followings than this value — the user will not be followed or liked. 
 
-**comments_file** — Path to the comments database . Default: `comments.txt`
+Default: 10000
 
-**stop_words** — A list of stop words: don't follow a user if they have any of these stop words in their description. Default: ['shop', 'store', 'free']
+**min_following_to_follow** — If the user has fewer followings than this value — the user will not be followed or liked. 
+
+Default: 10
+
+**max_followers_to_following_ratio** — if the user's followers/following is greater than this value — the user will not be followed or liked.
+
+Default: 10
+
+**max_following_to_followers_ratio** — if user's following/followers is greater than this value — he will not be followed or liked.
+
+Default: 2
+
+**min_media_count_to_follow** — If the user has fewer media count than this value — the user will not be followed.
+
+Default: 3
+
+**max_following_to_block** — If the user have a following more than this value — the user will be blocked in blocking scripts because he is a massfollower.
+
+Default: 2000
+
+**max_likes_to_like** — Max number of likes that can media have to be liked.
+
+Default: 100 
+
+**like_delay** — Delay between likes in seconds.
+
+Default: 10
+
+**unlike_delay** — Delay between unlikes in seconds.
+
+Default: 10
+
+**follow_delay** — Delay between follows in seconds.
+
+Default: 30
+
+**unfollow_delay** — Delay between unfollows in seconds.
+
+Default: 30
+
+**comment_delay** — Delay between comments in seconds.
+
+Default: 60
+
+**whitelist** — Path to the file with users that shouldn't be unfollowed.
+
+Default: `whitelist.txt`
+
+**blacklist** — Path to the file with users that shouldn't be followed, liked or commented.
+
+Default: `blacklist.txt`
+
+**comments_file** — Path to the comments database.
+
+Default: `comments.txt`
+
+**stop_words** — A list of stop words: don't follow a user if they have any of these stop words in their description. 
+
+Default: ['shop', 'store', 'free']
+
+---
 
 In all files there are one item per line. So, file:
 ``` python
@@ -102,13 +162,63 @@ Args:
 
 - _login_, _password_ — you could pass login and password and bot would use them. Bot would ask you for them by default.
 - _force_ — forses bot to re-login. False by default.
-- _proxy_ — proxy server that bot would use during authentication 
+- _proxy_ — proxy server that bot would use during authentication.
 - *use_cookie* — means that bot would use cookies not to re-login every time it needs to push some request. Defaults as True.
 - *cookie_fname* — filename where cookies would be stored. Default value: `cookie.txt`.
+
+Example: `bot.login(username="YOUR_LOGIN", password="YOUR_PASSWORD")`
 
 **logout** — Loggs you out.
 
 ### Get
+
+<a name="get_user_id_from_username"></a> **get_user_id_from_username** — Get `user_id` by username.
+
+Args:
+
+- _username_ — a string with user's Instagram username.
+
+Example: `bot.get_you_medias("lego")`
+Answer: `196743444`
+
+<a name="get_username_from_user_id"></a> **get_username_from_user_id** — Get username by `user_id`.
+
+Args:
+
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
+
+Example: `bot.get_you_medias("196743444")`
+Answer: `lego`
+
+<a name="get_media_id_from_link"></a> **get_media_id_from_link** — Get `media_id` by link on some Instagram post.
+
+Args:
+
+- _link_ — a string with a valid link on Instagram post.
+
+Example: `bot.get_media_id_from_link("https://www.instagram.com/p/BryhSSgDEI5/")`
+Answer: `1941760781700579897`
+
+
+<a name="get_link_from_media_id"></a> **get_link_from_media_id** — Get link on some Instagram post by `media_id`.
+
+Args:
+
+- *media_id* — See [get_media_id_from_link](#get_media_id_from_link)
+
+Example: `bot.get_media_id_from_link(1941760781700579897)`
+Answer: `https://www.instagram.com/p/BryhSSgDEI5/`
+
+<a name="get_user_medias"></a> **get_user_medias** — Get list of 20 last user's medias.
+
+Args:
+
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
+- *filtration* — Bot would filter those publications, witch are not satisfies bot parameters as `max_likes_to_like` and `min_likes_to_like`. All medias between them would be displayed. Defaults as True.
+- *is_comment* — Filtration of medias that has/hasn't a comment.
+
+Example: `bot.get_user_medias("lego")`
+Answer: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_your_medias"></a> **get_your_medias** — Get list of ids of your last medias.
 
@@ -119,74 +229,74 @@ Args:
 Example: `bot.get_you_medias()`
 Answer: `[1900986973457183396, 1900986921481250054]`
 
-<a name="get_timeline_medias"></a> **get_timeline_medias** — Get list of media_ids from your timeline feed
+<a name="get_timeline_medias"></a> **get_timeline_medias** — Get list of media_ids from your timeline feed.
 
 Example: `bot.get_timeline_medias()`
-Answer: `[1900986973457183396, 1900986921481250054]`
-
-<a name="get_user_medias"></a> **get_user_medias** — Get list of 20 last user's medias.
-
-Args:
-
-- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](TODO)
-- *filtration* — Bot would filter those publications, witch are not satisfies bot parameters as `max_likes_to_like` and `min_likes_to_like`. All medias between them would be displayed. Defaults as True.
-- *is_comment* — Filtration of medias that has/hasn't a comment.
-
-Example: `bot.get_user_medias("lego")`
 Answer: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_total_user_medias"></a> **get_total_user_medias** — Same as [get_user_medias](#get_user_medias), but fetches all of user's medias.
 
 Args:
 
-- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](TODO)
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 <a name="get_hashtag_medias"></a> **get_hashtag_medias** — Get list of medias by hashtag.
 
 Example: `bot.get_hashtag_medias("cats")`
 Answer: `[1900986973457183396, 1900986921481250054]`
 
-**get_geotag_medias** — Get list of medias by geotag
+<a name="get_geotag_medias"></a> **get_geotag_medias** — Get list of medias by geotag.
 
 Example: `TODO`
 
-**get_timeline_users** — Get list of users from your timeline feed
-
-Example: `bot.get_timeline_users()`
-
-**get_hashtag_users** — Get list of users who posted with hashtag
-
-Example: `bot.get_hashtag_users("Dog")`
-
-**get_geotag_users** — Get list of users who posted with geotag
+<a name="get_timeline_users"></a> **get_timeline_users** — Get list of users from your timeline feed.
 
 Example: `TODO`
 
-**get_userid_from_username** — Convert username to user_id
+<a name="get_hashtag_users"></a> **get_hashtag_users** — Get list of users who posted with hashtag.
 
-Example: `bot.get_userid_from_username("ohld")`
+Example: `TODO`
 
-**get_user_followers** — Get list of user's followers
+<a name=""></a> **get_geotag_users** — Get list of users who posted with geotag.
 
-Example: `bot.get_user_followers("competitor")`
+Example: `TODO`
 
-**get_user_following** — Get list of user's following
+<a name="get_user_followers"></a> **get_user_followers** — Get list of user's followers.
 
-Example: `bot.get_user_following("competitor")`
+Args:
 
-**get_media_likers** — Get list of media likers
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
+
+Example: `bot.get_user_followers("lego")`
+Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
+
+<a name="get_user_following"></a> **get_user_following** — Get list of user's following.
+
+Args:
+
+- *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
+
+Example: `bot.get_user_following("lego")`
+Answer: `['1501782303', '871819364', '4804628891', '45786877']`
+
+<a name="get_media_likers"></a> **get_media_likers** — Get list of media likers
+
+Args:
+
+- *media_id* — Id of post in Instagram that you want to fetch. See [get_media_id_from_link](#get_media_id_from_link).
 
 Example: `bot.get_media_likers("12312412")`
+Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
 
-**get_media_comments** — Get list of media's comments
+<a name="get_media_comments"></a> **get_media_comments** — Get list of media's comments
 
 Example: `bot.get_media_comments("12312412")`
 
-**get_comment** — Get comment from comment file
+<a name="get_comment"></a> **get_comment** — Get comment from comment file
 
 Example: `bot.get_comment()`
 
-**get_media_commenters** — Get list of users who commented on the media
+<a name="get_media_commenters"></a> **get_media_commenters** — Get list of users who commented on the media
 
 Example: `bot.get_media_commenters("12321")`
 
