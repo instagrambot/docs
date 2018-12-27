@@ -33,29 +33,37 @@ By the way we hardly recommend you not to use your own account if you don't need
     + [get_user_followers](#get_user_followers)
     + [get_user_following](#get_user_following)
     + [get_media_likers](#get_media_likers)
+    + [get_media_commenters](#get_media_commenters)
   + [Comments](#comments)
     + [get_media_comments](#get_media_comments)
+    + [get_media_comments_all](#get_media_comments_all)
     + [get_comment](#get_comment)
-    + [get_media_commenters](#get_media_commenters)
+    + [comment](#comment)
+    + [comment_medias](#comment_medias)
+    + [comment_hashtag](#comment_hashtag)
+    + [comment_geotag](#comment_geotag)
+    + [comment_users](#comment_users)
+    + [is_commented](#is_commented)
   + [Likes](#likes)
-    + [](#)
-    + [](#)
-    + [](#)
-    + [](#)
-    + [](#)
+    + [like](#like)
+    + [like_medias](#like_medias)
+    + [unlike](#unlike)
+    + [unlike_medias](#unlike_medias)
+    + [like_timeline](#like_timeline)
+    + [like_user](#like_user)
+    + [like_hashtag](#like_hashtag)
+    + [like_geotag](#like_geotag)
   + [Follows](#follows)
-    + [](#)
-    + [](#)
-    + [](#)
-    + [](#)
-    + [](#)
+    + [follow](#follow)
+    + [follow_users](#follow_users)
+    + [unfollow](#unfollow)
+    + [unfollow_users](#unfollow_users)
+    + [unfollow_non_followers](#unfollow_non_followers)
   + [Photos](#photos)
-    + [](#)
-    + [](#)
-    + [](#)
-    + [](#)
+    + [upload_photo](#upload_photo)
+    + [download_photo](#download_photo)
+    + [download_photos](#download_photos)
   
-
 ## <a name="Quickstart"></a> Quickstart
 
 For the better understanding of how bot works, let's start with a quick example:
@@ -231,6 +239,7 @@ Args:
 - _username_ — a string with user's Instagram username.
 
 Example: `bot.get_you_medias("lego")`
+
 Answer: `196743444`
 
 <a name="get_username_from_user_id"></a> **get_username_from_user_id** — Get username by `user_id`.
@@ -240,6 +249,7 @@ Args:
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 Example: `bot.get_you_medias("196743444")`
+
 Answer: `lego`
 
 <a name="get_media_id_from_link"></a> **get_media_id_from_link** — Get `media_id` by link on some Instagram post.
@@ -249,6 +259,7 @@ Args:
 - _link_ — a string with a valid link on Instagram post.
 
 Example: `bot.get_media_id_from_link("https://www.instagram.com/p/BryhSSgDEI5/")`
+
 Answer: `1941760781700579897`
 
 
@@ -259,6 +270,7 @@ Args:
 - *media_id* — See [get_media_id_from_link](#get_media_id_from_link)
 
 Example: `bot.get_media_id_from_link(1941760781700579897)`
+
 Answer: `https://www.instagram.com/p/BryhSSgDEI5/`
 
 ### <a name="getmedias"></a> Get medias
@@ -272,6 +284,7 @@ Args:
 - *is_comment* — Filtration of medias that has/hasn't a comment.
 
 Example: `bot.get_user_medias("lego")`
+
 Answer: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_your_medias"></a> **get_your_medias** — Get list of ids of your last medias.
@@ -281,11 +294,13 @@ Args:
 - _as_dict_ — With parameter as_dict=True returns media as dict. False by default.
 
 Example: `bot.get_you_medias()`
+
 Answer: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_timeline_medias"></a> **get_timeline_medias** — Get list of media_ids from your timeline feed.
 
 Example: `bot.get_timeline_medias()`
+
 Answer: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_total_user_medias"></a> **get_total_user_medias** — Same as [get_user_medias](#get_user_medias), but fetches all of user's medias.
@@ -297,23 +312,24 @@ Args:
 <a name="get_hashtag_medias"></a> **get_hashtag_medias** — Get list of medias by hashtag.
 
 Example: `bot.get_hashtag_medias("cats")`
+
 Answer: `[1900986973457183396, 1900986921481250054]`
 
 <a name="get_geotag_medias"></a> **get_geotag_medias** — Get list of medias by geotag.
 
 Example: `TODO`
 
+### <a name="getusers"></a> Get users
+
 <a name="get_timeline_users"></a> **get_timeline_users** — Get list of users from your timeline feed.
 
 Example: `TODO`
-
-### Get users
 
 <a name="get_hashtag_users"></a> **get_hashtag_users** — Get list of users who posted with hashtag.
 
 Example: `TODO`
 
-<a name=""></a> **get_geotag_users** — Get list of users who posted with geotag.
+<a name="get_geotag_users"></a> **get_geotag_users** — Get list of users who posted with geotag.
 
 Example: `TODO`
 
@@ -324,6 +340,7 @@ Args:
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 Example: `bot.get_user_followers("lego")`
+
 Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
 
 <a name="get_user_following"></a> **get_user_following** — Get list of user's following.
@@ -333,6 +350,7 @@ Args:
 - *user_id* — Id of user that you want to fetch. See [get_user_id_from_username](#get_user_id_from_username).
 
 Example: `bot.get_user_following("lego")`
+
 Answer: `['1501782303', '871819364', '4804628891', '45786877']`
 
 <a name="get_media_likers"></a> **get_media_likers** — Get list of media likers
@@ -341,112 +359,104 @@ Args:
 
 - *media_id* — Id of post in Instagram that you want to fetch. See [get_media_id_from_link](#get_media_id_from_link).
 
-Example: `bot.get_media_likers("12312412")`
+Example: `bot.get_media_likers("1941760781700579897")`
+
+Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
+
+<a name="get_media_commenters"></a> **get_media_commenters** — Get list of users who commented on the media
+
+Example: `bot.get_media_commenters("1941760781700579897")`
+
 Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
 
 ### Comments
 
-<a name="get_media_comments"></a> **get_media_comments** — Get list of media's comments
+<a name="get_media_comments"></a> **get_media_comments** — Get list of 20 latest media's comments
 
-Example: `bot.get_media_comments("12312412")`
+Args:
+
+- *media_id* Id of post in Instagram that you want to fetch. See [get_media_id_from_link](#get_media_id_from_link).
+- *only_text* — option to get list with only text of each comment without additional information. Defaults as False.
+
+Example: `bot.get_media_comments("1941760781700579897")`
+Answer is a list of such objects:
+```
+{'pk': 17848187965317794, 'user_id': 5726722318, 'text': 'Come glasgow', 'type': 0, 'created_at': 1545772239, 'created_at_utc': 1545772239, 'content_type': 'comment', 'status': 'Active', 'bit_flags': 0, 'user': {'pk': 5726722318, 'username': 'dj_gramm', 'full_name': 'KingJellyIG', 'is_private': True, 'profile_pic_url': 'https://scontent-iad3-1.cdninstagram.com/vp/b7e6505312f276c551b9b27c784d8080/5CB5D7D8/t51.2885-19/s150x150/46878995_2733544636871740_4791338569069232128_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com', 'profile_pic_id': '1943181535717308400_5726722318', 'is_verified': False}, 'did_report_as_spam': False, 'share_enabled': False, 'has_liked_comment': False, 'comment_like_count': 0, 'inline_composer_display_condition': 'never'}
+```
+
+<a name="get_media_comments_all"></a> **get_media_comments_all** — Same as [get_media_comments](#get_media_comments), but with all comments.
 
 <a name="get_comment"></a> **get_comment** — Get comment from comment file
 
-Example: `bot.get_comment()`
+Example: `bot.get_comment(17848187965317794)`
+Answer is a comment object:
+```
+{'pk': 17848187965317794, 'user_id': 5726722318, 'text': 'Come glasgow', 'type': 0, 'created_at': 1545772239, 'created_at_utc': 1545772239, 'content_type': 'comment', 'status': 'Active', 'bit_flags': 0, 'user': {'pk': 5726722318, 'username': 'dj_gramm', 'full_name': 'KingJellyIG', 'is_private': True, 'profile_pic_url': 'https://scontent-iad3-1.cdninstagram.com/vp/b7e6505312f276c551b9b27c784d8080/5CB5D7D8/t51.2885-19/s150x150/46878995_2733544636871740_4791338569069232128_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com', 'profile_pic_id': '1943181535717308400_5726722318', 'is_verified': False}, 'did_report_as_spam': False, 'share_enabled': False, 'has_liked_comment': False, 'comment_like_count': 0, 'inline_composer_display_condition': 'never'}
+```
 
-<a name="get_media_commenters"></a> **get_media_commenters** — Get list of users who commented on the media
+### <a name="likes"></a> Likes
 
-Example: `bot.get_media_commenters("12321")`
-
-### Like
-
-**like** — Like media_id.
+<a name="like"></a> **like** — Like media_id.
 
 Example: `bot.like("1231241210")`
 
-**like_medias** — Like medias from list.
+<a name="like_medias"></a> **like_medias** — Like medias from list.
 
 Example: `bot.like_medias(["1323124", "123141245"])`
 
-**like_timeline** — Like medias from your timeline feed
-
-Example: `bot.like_timeline()`
-
-**like_user** — Like last user's medias
-
-Example: `bot.like_user("activefollower")`
-
-**like_hashtag** — Like last medias with hashtag.
-
-Example: `bot.like_hashtag("dog")`
-
-**like_geotag** — Like last medias with geotag
-
-Example: `TODO`
-
-**unlike** — Remove like from media.
+<a name="unlike"></a> **unlike** — Remove like from media.
 
 Example: `bot.unlike("12321412512")`
 
-**unlike_medias** — Remove likes from medias in list
+<a name="unlike_medias"></a> **unlike_medias** — Remove likes from medias in list
 
 Example: `bot.unlike_medias(["123", "321"])`
 
-### Follow
+<a name="like_timeline"></a> **like_timeline** — Like medias from your timeline feed
 
-**follow** — Follow user.
+Example: `bot.like_timeline()`
 
-Example: `bot.follow("activefollower")`
+<a name="like_user"></a> **like_user** — Like last user's medias
 
-**follow_users** — Follow users from list.
+Example: `bot.like_user("activefollower")`
 
-Example: `bot.follow(["activefollower1", "activefollower2"])`
+<a name="like_hashtag"></a> **like_hashtag** — Like last medias with hashtag.
 
-**unfollow** — Unfollow user.
+Example: `bot.like_hashtag("dog")`
 
-Example: `bot.unfollow("competitor")`
-
-**unfollow_users** — Unfollow users from list.
-
-Example: `bot.unfollow_users(["competitor1", "competitor2"])`
-
-**unfollow_non_followers** — Unfollow users who don't follow you.
-
-Example: `bot.unfollow_non_followers()`
-
-### Comment
-
-**comment** — Put a comment under the media.
-
-Example: `bot.comment("1231234", "Nice pic!")`
-
-**comment_medias** — Put comments under medias from list.
-
-Example: `bot.comment_medias(["123", "321"])`
-
-**comment_hashtag** — Put comments under medias by hashtag
-
-Example: `bot.comment_hashtag("Dog")`
-
-**comment_geotag** — Put comments under medias by geotag.
+<a name="like_geotag"></a> **like_geotag** — Like last medias with geotag
 
 Example: `TODO`
 
-**comment_users** — Put comments under users' last medias.
+### <a name="follows"></a> Follows
 
-Example: `bot.comment_users(["activefollower1", "activefollower2"])`
+<a name="follow"></a> **follow** — Follow user.
 
-**is_commented** — Check if media is already commented.
+Example: `bot.follow("activefollower")`
 
-Example: `bot.is_commented("123321")`
+<a name="follow_users"></a> **follow_users** — Follow users from list.
 
-### Photos
+Example: `bot.follow(["activefollower1", "activefollower2"])`
 
-**upload_photo** — Uploads photo to your account.
+<a name="unfollow"></a> **unfollow** — Unfollow user.
+
+Example: `bot.unfollow("competitor")`
+
+<a name="unfollow_users"></a> **unfollow_users** — Unfollow users from list.
+
+Example: `bot.unfollow_users(["competitor1", "competitor2"])`
+
+<a name="unfollow_non_followers"></a> **unfollow_non_followers** — Unfollow users who don't follow you.
+
+Example: `bot.unfollow_non_followers()`
+
+### <a name="photos"></a> Photos
+
+<a name="upload_photo"></a> **upload_photo** — Uploads photo to your account.
 
 Example: `bot.upload_photo("/somephoto.jpg", caption="Nice pic!")`
 
-**download_photo** — Downloads photo by id.
+<a name="download_photo"></a> **download_photo** — Downloads photo by id.
 
 Example: `bot.download_photo(["123", filename="somefile.jpg")`
 
