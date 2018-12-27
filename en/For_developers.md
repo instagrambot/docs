@@ -1,10 +1,62 @@
-﻿# Documentation for Developers
+﻿# <a name="Intro"></a> Documentation for Developers
 
 This is documentation for developers, where we provide our bot methods as an API for your needs. Instagram API [deprecated](https://www.instagram.com/developer/changelog/) practically all of their methods, so we use their mobile API. We are hiding under the mask of mobile phone. Instagram servers think that your requests from instabot are made from some mobile app. By the way we got some cases of ban by them, our mask is not perfect. We are hardly trying to make your requests as safe as they could be. For example, we restricted the amount of likers of some picture til 999.
 
 By the way we hardly recommend you not to use your own account if you don't need your personal data or don't want to promote your account.
 
-## Quickstart
+# <a name="Contents"></a> Contents
+
+- [Intro](#Intro)
+- [Contents](#Contents)
+- [Quickstart](#Quickstart)
+- [Bot parameters](#Params)
+- [Bot Methods](#Methods)
+  + [Auth](#Auth)
+    + [login](#login)
+    + [logout](#logout)
+  + [IDs](#ids)
+    + [get_user_id_from_username](#get_user_id_from_username)
+    + [get_username_from_user_id](#get_username_from_user_id)
+    + [get_media_id_from_link](#get_media_id_from_link)
+    + [get_link_from_media_id](#get_link_from_media_id)
+  + [Get medias](#getmedias)
+    + [get_user_medias](#get_user_medias)
+    + [get_your_medias](#get_your_medias)
+    + [get_timeline_medias](#get_timeline_medias)
+    + [get_total_user_medias](#get_total_user_medias)
+    + [get_hashtag_medias](#get_hashtag_medias)
+    + [get_geotag_medias](#get_geotag_medias)
+  + [Get users](#getusers)
+    + [get_timeline_users](#get_timeline_users)
+    + [get_hashtag_users](#get_hashtag_users)
+    + [get_geotag_users](#get_geotag_users)
+    + [get_user_followers](#get_user_followers)
+    + [get_user_following](#get_user_following)
+    + [get_media_likers](#get_media_likers)
+  + [Comments](#comments)
+    + [get_media_comments](#get_media_comments)
+    + [get_comment](#get_comment)
+    + [get_media_commenters](#get_media_commenters)
+  + [Likes](#likes)
+    + [](#)
+    + [](#)
+    + [](#)
+    + [](#)
+    + [](#)
+  + [Follows](#follows)
+    + [](#)
+    + [](#)
+    + [](#)
+    + [](#)
+    + [](#)
+  + [Photos](#photos)
+    + [](#)
+    + [](#)
+    + [](#)
+    + [](#)
+  
+
+## <a name="Quickstart"></a> Quickstart
 
 For the better understanding of how bot works, let's start with a quick example:
 
@@ -24,7 +76,7 @@ The output of program would be greeting phrase from [official LEGO account](http
 Hello! You made it to the official #LEGO Instagram - where everything is awesome!
 ```
 
-## Bot Parameters
+##  <a name="Params"></a> Bot Parameters
 
 **proxy** — Proxy for Instabot.
 
@@ -150,13 +202,13 @@ Good pic!
 ```
 You should read as `["Nice!", "Great!", "Good pic!"]`
 
-# Bot Methods
+# <a name="Methods"></a> Bot Methods
 
 Methods of `Bot` instance, that you could use as API calls.
 
-### Auth
+### <a name="Auth"></a> Auth
 
-**login** — Method that authenticates you in Instagram.
+<a name="login"></a> **login** — Method that authenticates you in Instagram.
 
 Args:
 
@@ -168,9 +220,9 @@ Args:
 
 Example: `bot.login(username="YOUR_LOGIN", password="YOUR_PASSWORD")`
 
-**logout** — Loggs you out.
+<a name="logout"></a> **logout** — Loggs you out.
 
-### Get
+### <a name="ids"></a> IDs
 
 <a name="get_user_id_from_username"></a> **get_user_id_from_username** — Get `user_id` by username.
 
@@ -208,6 +260,8 @@ Args:
 
 Example: `bot.get_media_id_from_link(1941760781700579897)`
 Answer: `https://www.instagram.com/p/BryhSSgDEI5/`
+
+### <a name="getmedias"></a> Get medias
 
 <a name="get_user_medias"></a> **get_user_medias** — Get list of 20 last user's medias.
 
@@ -253,6 +307,8 @@ Example: `TODO`
 
 Example: `TODO`
 
+### Get users
+
 <a name="get_hashtag_users"></a> **get_hashtag_users** — Get list of users who posted with hashtag.
 
 Example: `TODO`
@@ -287,6 +343,8 @@ Args:
 
 Example: `bot.get_media_likers("12312412")`
 Answer: `['6976090614', '4828850852', '6986373483', '7139262982']`
+
+### Comments
 
 <a name="get_media_comments"></a> **get_media_comments** — Get list of media's comments
 
@@ -326,8 +384,6 @@ Example: `bot.like_hashtag("dog")`
 
 Example: `TODO`
 
-### Unlike
-
 **unlike** — Remove like from media.
 
 Example: `bot.unlike("12321412512")`
@@ -345,8 +401,6 @@ Example: `bot.follow("activefollower")`
 **follow_users** — Follow users from list.
 
 Example: `bot.follow(["activefollower1", "activefollower2"])`
-
-### Unfollow
 
 **unfollow** — Unfollow user.
 
