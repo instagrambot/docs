@@ -196,6 +196,10 @@ Default: `blacklist.txt`
 
 Default: `comments.txt`
 
+**base_path** — Base directory path for local files such as comments_file, blacklist, whitelist, etc..
+
+Default: `./`
+
 **stop_words** — A list of stop words: don't follow a user if they have any of these stop words in their description. 
 
 Default: ['shop', 'store', 'free']
