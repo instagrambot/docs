@@ -273,7 +273,7 @@ Parameters:
 
 - *media_id* — See [get_media_id_from_link](#get_media_id_from_link)
 
-Example: `bot.get_media_id_from_link(1941760781700579897)`
+Example: `bot.get_link_from_media_id(1941760781700579897)`
 
 Result: `https://www.instagram.com/p/BryhSSgDEI5/`
 
